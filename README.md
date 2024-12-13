@@ -12,3 +12,6 @@ https://drive.exsnake.com/login?redirect_url=/apps/files/?dir%3D/Informatica%26
 
 Repo di Luigi Vollono
 https://luigi-v.github.io/Appunti_Universita/
+
+Repo di Pasku per gli esercizi svolti di PD
+https://github.com/PasqualeMuraca/ProgrammazioneDistribuita
