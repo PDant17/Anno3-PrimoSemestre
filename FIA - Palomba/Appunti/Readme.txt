@@ -1,1 +1,0 @@
-Alla pagina 84 degli appunti di Paloma si inizia a parlare degli argomenti inerenti alla seconda intercorso.

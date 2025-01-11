@@ -1,1 +1,0 @@
-Testing pt3 sostanzialmente è un duplicato di testing e l'unica differenza (oltre al fatto che manchino 100 slide iniziali) è che c'è un esempio di Functional Testing da slide 45 a 50.
