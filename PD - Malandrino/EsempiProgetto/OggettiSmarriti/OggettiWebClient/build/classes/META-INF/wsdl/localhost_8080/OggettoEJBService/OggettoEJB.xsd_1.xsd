@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.3 (RELEASE-2.4.3-ad3323c; 2019-01-21T17:46:06+0000) JAXWS-RI/2.3.2 JAXWS-API/2.3.2 JAXB-RI/2.3.2 JAXB-API/2.3.2 git-revision#unknown. --><xs:schema xmlns:tns="http://server/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://server/">
+
+<xs:element name="createOggetto" type="tns:createOggetto"/>
+
+<xs:element name="createOggettoResponse" type="tns:createOggettoResponse"/>
+
+<xs:element name="deleteOggetto" type="tns:deleteOggetto"/>
+
+<xs:element name="deleteOggettoResponse" type="tns:deleteOggettoResponse"/>
+
+<xs:element name="findAll" type="tns:findAll"/>
+
+<xs:element name="findAllResponse" type="tns:findAllResponse"/>
+
+<xs:element name="findByCategoria" type="tns:findByCategoria"/>
+
+<xs:element name="findByCategoriaResponse" type="tns:findByCategoriaResponse"/>
+
+<xs:element name="findById" type="tns:findById"/>
+
+<xs:element name="findByIdResponse" type="tns:findByIdResponse"/>
+
+<xs:element name="findByLuogo" type="tns:findByLuogo"/>
+
+<xs:element name="findByLuogoResponse" type="tns:findByLuogoResponse"/>
+
+<xs:element name="modifyOggetto" type="tns:modifyOggetto"/>
+
+<xs:element name="modifyOggettoResponse" type="tns:modifyOggettoResponse"/>
+
+<xs:complexType name="createOggetto">
+<xs:sequence>
+<xs:element name="arg0" type="tns:oggetto" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="oggetto">
+<xs:sequence>
+<xs:element name="categoria" type="xs:string" minOccurs="0"/>
+<xs:element name="data" type="tns:date" minOccurs="0"/>
+<xs:element name="descrizione" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="luogo" type="xs:string" minOccurs="0"/>
+<xs:element name="restituito" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="date">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="createOggettoResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="findById">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:oggetto" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteOggetto">
+<xs:sequence>
+<xs:element name="arg0" type="tns:oggetto" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteOggettoResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="findAll">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="findAllResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:oggetto" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="modifyOggetto">
+<xs:sequence>
+<xs:element name="arg0" type="tns:oggetto" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="modifyOggettoResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="findByLuogo">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findByLuogoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:oggetto" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findByCategoria">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findByCategoriaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:oggetto" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
