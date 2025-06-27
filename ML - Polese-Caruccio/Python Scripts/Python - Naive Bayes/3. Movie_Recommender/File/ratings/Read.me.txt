@@ -1,0 +1,9 @@
+I file:
+	- ratings_1.dat
+	- ratings_2.dat
+	- ratings_3.dat
+	- ratings_4.dat
+	- ratings_5.dat
+	- ratings_6.dat
+
+Devono essere combinati in un unico file chiamato "ratings.dat"
